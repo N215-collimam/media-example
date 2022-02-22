@@ -1,0 +1,46 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+
+.wrapper{
+    min-height:800px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: aliceblue;
+     
+    .box{
+        width: 50%;
+        height: 200px;
+        background-color: red;
+    }
+
+    .media-box{
+        width: 600px;
+        height: 100px;
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px)
+{
+    .wrapper{
+        background-color: blue;
+    }
+}
+@media all and (max-width:600px) {
+    .wrapper{
+        .media-box{
+            width:300px;
+        }
+    }
+//should have used flex for the three images, when the page hits a certain width, change display to column. When it goes below max width, it chamges ^
+    
+} 
